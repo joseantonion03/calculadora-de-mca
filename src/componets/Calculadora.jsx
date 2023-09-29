@@ -121,7 +121,7 @@ const Calculadora = () => {
             htmlFor="profundidade"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
           >
-            Profundidade da bomba
+            Profundidade da bomba (Metros)
           </label>
           <input
             type="number"
@@ -140,7 +140,7 @@ const Calculadora = () => {
             htmlFor="distancia"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
           >
-            Distância do poço até o reservatório
+            Distância do poço até o reservatório (Metros)
           </label>
           <input
             type="number"
@@ -178,7 +178,7 @@ const Calculadora = () => {
             htmlFor="desnivel"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
           >
-            Desnível do poço até o reservatório
+            Desnível do poço até o reservatório (Metros)
           </label>
           <input
             type="number"

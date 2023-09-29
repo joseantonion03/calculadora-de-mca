@@ -3,8 +3,8 @@ import "flowbite";
 const SpeedDial = (props) => {
   const sharePage = (url) => {
     const data = {
-      title: "Calculadora de Dimensionamento para Bomba d'Água",
-      text: "Encontre a bomba d'água perfeita para o seu projeto com a nossa Calculadora de Dimensionamento. Dimensione corretamente a potência e vazão da sua bomba, levando em consideração suas necessidades específicas. Tenha a garantia de escolher a bomba mais eficiente e econômica para o seu sistema. Otimize o desempenho e a eficiência do seu projeto de bombeamento de água com nossa calculadora especializada.",
+      title: "Calculadora de MCA Hazen-Williams - Dimensione Bombas com Precisão",
+      text: "Utilize nossa calculadora de MCA Hazen-Williams para dimensionar bombas com facilidade e precisão. Determine a Altura Manométrica Total para seus sistemas de água de forma rápida e confiável. Otimize seu projeto hidráulico com a nossa ferramenta online gratuita.",
       url: url,
     };
     if (navigator.canShare && navigator.canShare(data)) {

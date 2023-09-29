@@ -64,27 +64,30 @@ const Calculadora = () => {
   };
   return (
     <>
-      <form className="min-sm:w-full sm:max-w-screen-sm mx-auto">
-        <div className="mb-6">
+      <form className="flex flex-wrap justify-between min-sm:w-full sm:max-w-screen-sm mx-auto">
+        <div className="w-full">
+          <h1 className="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">Calculadora de MCA Hazen-Williams.</h1>
+        </div>
+        <div className="w-full mb-6">
           <div
-            class="p-4 text-sm text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300"
-            role="alert"
+            className="justify-center items-center px-4 py-3 text-gray-700 border border-gray-200 rounded-lg sm:flex sm:px-5 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+            aria-label="Breadcrumb"
           >
             {mca ? (
               <>
-                O resultado do MCA é {" "}
-                <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                <span className="pr-2">O resultado do MCA é</span>
+                <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-600 bg-gray-200 rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-300 dark:focus:ring-gray-700">
                   {mca}
                 </span>
               </>
             ) : (
-              <span class="font-medium">
+              <span className="font-medium px-3 py-2">
                 Informe os dados para obter o resultado
               </span>
             )}
           </div>
         </div>
-        <div className="mb-6">
+        <div className="w-full mb-6">
           <label
             htmlFor="tubulacao"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -112,7 +115,7 @@ const Calculadora = () => {
           </select>
         </div>
 
-        <div className="mb-6">
+        <div className="w-w48	mb-6">
           <label
             htmlFor="profundidade"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -131,7 +134,7 @@ const Calculadora = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="w-w48	mb-6">
           <label
             htmlFor="distancia"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -150,7 +153,7 @@ const Calculadora = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="w-w48	mb-6">
           <label
             htmlFor="vazao"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -169,7 +172,7 @@ const Calculadora = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="w-w48	mb-6">
           <label
             htmlFor="desnivel"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"

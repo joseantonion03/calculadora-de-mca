@@ -13,6 +13,9 @@ export default {
           dark: "#0000005f",
         },
       },
+      width:{
+        w48: '48%'
+      }
     },
   },
   plugins: [require("flowbite/plugin")],

@@ -22,7 +22,6 @@ const Calculadora = () => {
       ...dados,
       [name]: value,
     });
-    console.log(dados);
   };
 
   function isEmptyData(obj) {
@@ -66,7 +65,9 @@ const Calculadora = () => {
     <>
       <form className="flex flex-wrap justify-between min-sm:w-full sm:max-w-screen-sm mx-auto">
         <div className="w-full">
-          <h1 className="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">Calculadora de MCA Hazen-Williams.</h1>
+          <h1 className="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+            Calculadora de MCA Hazen-Williams.
+          </h1>
         </div>
         <div className="w-full mb-6">
           <div
@@ -75,14 +76,14 @@ const Calculadora = () => {
           >
             {mca ? (
               <>
-                <span className="pr-2">O resultado do MCA é</span>
+                <span className="pr-2">O RESULTADO DO MCA É</span>
                 <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-600 bg-gray-200 rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-300 dark:focus:ring-gray-700">
                   {mca}
                 </span>
               </>
             ) : (
               <span className="font-medium px-3 py-2">
-                Informe os dados para obter o resultado
+                INFORME OS DADOS PARA OBTER O RESULTADO
               </span>
             )}
           </div>
@@ -115,7 +116,7 @@ const Calculadora = () => {
           </select>
         </div>
 
-        <div className="w-w48	mb-6">
+        <div className="w-full sm:w-w48 mb-6">
           <label
             htmlFor="profundidade"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -129,12 +130,12 @@ const Calculadora = () => {
             value={dados.profundidade}
             onChange={handleInputChange}
             className="shadow-sm py-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            placeholder="Informe a profundidade em que a bomba será instalada no poço (Metros)"
+            //placeholder="Informe a profundidade em que a bomba será instalada no poço (Metros)"
             required={true}
           />
         </div>
 
-        <div className="w-w48	mb-6">
+        <div className="w-full sm:w-w48 mb-6">
           <label
             htmlFor="distancia"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -148,12 +149,12 @@ const Calculadora = () => {
             value={dados.distancia}
             onChange={handleInputChange}
             className="shadow-sm py-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            placeholder="Informe a distância do poço até o destino final (Metros)"
+            //placeholder="Informe a distância do poço até o destino final (Metros)"
             required={true}
           />
         </div>
 
-        <div className="w-w48	mb-6">
+        <div className="w-full sm:w-w48 mb-6">
           <label
             htmlFor="vazao"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -167,12 +168,12 @@ const Calculadora = () => {
             value={dados.vazao}
             onChange={handleInputChange}
             className="shadow-sm py-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            placeholder="Quantos litros de água você pretende retirar do poço por hora"
+            //placeholder="Quantos litros de água você pretende retirar do poço por hora"
             required={true}
           />
         </div>
 
-        <div className="w-w48	mb-6">
+        <div className="w-full sm:w-w48 mb-6">
           <label
             htmlFor="desnivel"
             className="block mb-2 text-left text-sm font-medium text-gray-900 dark:text-white"
@@ -186,7 +187,7 @@ const Calculadora = () => {
             value={dados.desnivel}
             onChange={handleInputChange}
             className="shadow-sm py-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            placeholder="Existe algum desnível do poço até o destino final? (Altura em metros)"
+            //placeholder="Existe algum desnível do poço até o destino final? (Altura em metros)"
             required={true}
           />
         </div>

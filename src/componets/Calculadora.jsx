@@ -202,6 +202,7 @@ const Calculadora = () => {
         >
           Calcular
         </button>
+        <a className="text-center mt-3.5" href="https://www.joseantonion.com.br/">Desenvolvido por José Antônio</a>
       </form>
       <SpeedDial url="https://dimensionamento.vercel.app" />
       {loading && <LoadingPage texto="Buscando informações" />}

@@ -47,10 +47,10 @@ const Calculadora = () => {
         "https://dimensionamento-api.vercel.app/",
         {
           tubulacao: dados.tubulacao,
-          profundidade: dados.profundidade,
-          distancia: dados.distancia,
-          vazao: dados.vazao,
-          altura: dados.desnivel,
+          profundidade: dados.profundidade > 0 ? dados.profundidade : 1,
+          distancia: dados.distancia > 0 ? dados.distancia : 1,
+          vazao: dados.vazao > 0 ? dados.vazao : 1,
+          altura: dados.desnivel > 0 ? dados.desnivel : 1,
         }
       );
       if (response.status == 200) {

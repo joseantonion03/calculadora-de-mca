@@ -61,6 +61,29 @@ const Calculadora = () => {
     }
     setLoading(false);
   };
+
+    useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = `
+      atOptions = {
+        'key' : 'c7ebf9a708a89beafa9df8b6a8aa5c05',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/c7ebf9a708a89beafa9df8b6a8aa5c05/invoke.js"></scr' + 'ipt>');
+    `;
+
+    document.head.appendChild(script);
+
+    /*return () => {
+      // Remover o script ao desmontar o componente, se necessário
+      document.head.removeChild(script);
+    };*/
+  }, []);
+
   return (
     <>
       <form className="flex flex-wrap justify-between min-sm:w-full sm:max-w-screen-sm mx-auto">

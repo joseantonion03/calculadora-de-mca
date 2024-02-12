@@ -62,7 +62,7 @@ const Calculadora = () => {
     setLoading(false);
   };
 
-    useEffect(() => {
+    /*useEffect(() => {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.innerHTML = `
@@ -78,11 +78,11 @@ const Calculadora = () => {
 
     document.head.appendChild(script);
 
-    /*return () => {
+    return () => {
       // Remover o script ao desmontar o componente, se necessário
       document.head.removeChild(script);
-    };*/
-  }, []);
+    };
+  }, []);*/
 
   return (
     <>
